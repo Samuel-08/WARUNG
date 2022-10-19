@@ -1,0 +1,339 @@
+membuat alert
+membuat triger mysql
+Historis penjualan per bulan.
+Historis penjualan per tahun.
+Daftar barang yang memberikan kontribusi penjualan terbesar.
+Daftar kategori yang memberikan kontribusi terbesar.
+Daftar barang yang baru ditambahkan.
+Daftar pelanggan dengan kontribusi penjualan terbesar.
+Daftar penjualan terbaru.
+
+
+Home » Admin Template Dashboard Codeigniter 4 (CI4)
+1. Login System
+Seperti umumnya aplikasi, Admin Template Codeigniter 4 ini juga menyediakan fitur sistem login yang digunakan untuk melakukan pembatasan akses terhadap data.
+
+Admin-Template-Codeigniter-4-Login-System
+Admin-Template-Codeigniter-4-Login-System
+2. Sistem Registrasi
+Admin Template Codeigniter 4 ini dilengkapi dengan sistem registrasi dimana registrasi dapat dilakukan mandiri oleh user. Ada tiga metode aktivasi akun yang dapat diatur yaitu:
+
+Melalui email konfirmasi. User akan dikirim email berisi link aktivasi akun.
+Otomatis aktif. Ketika user mendaftar, akun langsung aktif dan dapat digunakan untuk login
+Manual aktivasi. Setelah user register, aktivasi akun dilakukan manual oleh administrator
+Setting Registrasi Akun
+Setting Registrasi Akun
+Form registrasi juga sudah dilengkapi password meter untuk mengukur kekuatan password
+
+Form Registrasi Akun
+Form Registrasi Akun
+3. Sistem Reset Password
+Sustu sistem dikatakan aman salah satunya adalah tidak seorang pun tahu password user kecuali user itu sendiri, bahkan administrator sistem maupun database administrator sekalipun. Kalau pun tahu hanya sebatas password yang di hash yang disimpan di database
+
+Dengan demikian, jika user lupa password, maka tidak akan ada yang bisa memberitahu, sehingga biasanya disediakan menu untuk mereset password.
+
+Admin template ini telah menyediakan sistem reset password yang dapat Anda gunakan sebagai referensi bagaimana membangun sistem reset password. Cara kerjanya adalah, user memasukkan alamat email ke form yang telah disediakan.
+
+Form Reset Password
+Form Reset Password
+Selanjutnya sistem akan mengirimkan link reset password ke alamat email tersebut. Ketika user mengklik link tersebut, maka user akan diarahkan ke halaman reset password untuk membuat password baru.
+
+Form Buat Password Baru
+Form Buat Password Baru
+4. Kirim Ulang Link Aktivasi
+Ketika melakukan registrasi akun dengan metode aktivasi via email, karena satu dan lain hal, user tidak mendapatkan link aktivasi tersebut. Untuk mengatasi hal tersebut, kami telah menyediakan sistem untuk mengirim ulang link aktivasi.
+
+Form Kirim Ulang Link Aktivasi
+Form Kirim Ulang Link Aktivasi
+5. User Manager
+Admin Template ini sudah menyediakan module manajemen user sehingga Anda dapat dengan mudah mengelola user yang ada, baik menambah, mengedit dan menghapus user.
+
+User Manager
+User Manager – Admin Template Codeigniter 4
+6. Menu Manager
+Ketika membuat aplikasi, umumnya menu ditulis secara hard code (ditulis manual di coding nya), karena umumnya membuat menu by sistem merupakan pekerjaan yang rumit, mulai dari mengatur hierarki menu (parent dan child), menambahkan icon, membuat menu ter highlight ketika membuka halaman yang sesuai, menu yang hanya tampil untuk role tertentu, dll
+
+Dengan aplikasi admin template ini, Anda dapat dengan mudah mengelola menu pada aplikasi, diantaranya:
+
+Pengaturan hierarki menu dapat dilakukan dengan sangat mudah, cukup drag n drop pada menu yang ada;
+Dapat dengan mudah melakukan pengaturan menu mana saja yang akan tampil ketika user login dengan role tertentu;
+Icon dapat dipilih dengan mudah (tersedia ratusan icon dari Font Awesome 5);
+Menu akan otomatis ter highlight ketika membuka halaman yang telah ditentukan;
+Dan berbagai kemudahan lainnya.
+Berikut contoh tampilannya:
+
+Menu Manager Admin Template Dashboard Codeigniter 4
+Menu Manager Admin Template Dashboard Codeigniter 4
+7. Module Manager
+Dalam Admin Template ini, halaman yang akan ditampilkan diassign ke module, dengan sistem ini, kita dapat dengan mudah mengelola halaman yang ada, seperti menambah halaman, mengaktifkan dan menonaktifkan halaman, membatasi akses halaman untuk user dengan role tertentu, menentukan judul halaman, dan lainnya. Semua itu dapat dikelola dengan mudah melalui halaman module manager.
+
+Pengaturan Module Pada Admin Template Codeigniter 4
+Pengaturan Module Pada Admin Template Codeigniter 4
+8. Role Manager
+Admin Template Codeigniter 4 ini dikembangkan dengan mengakomodir Role Based Access Control (RBAC) di mana akses data (membaca, mengedit, menghapus data – CRUD) ditentukan oleh role (peran) dari user yang login ke sistem.
+
+Misal role Administrator diperbolehkan membaca, mengedit, dan menghapus semua data, sedangkan role user biasa hanya diperbolehkan untuk membaca dan mengedit data miliknya sendiri dan tidak diperkenankan menghapus data apapun.
+
+Semua pengaturan hak akses tersebut dikelola by sistem, jauh lebih mudah dibanding cara konvensional dengan menuliskan code di aplikasi.
+
+Aplikasi ini memungkinkan user untuk memiliki role lebih dari satu, misal user bisa memiliki role sebagai user biasa dan web developer, dengan model seperti ini, user dapat diberi kelompok akses data yang beragam.
+
+Module Role Manager
+Module Role Manager
+9. Assign Role Ke User
+Setelah mendefinisikan role, maka selanjutnya kita perlu meng-assign role tersebut ke user, sehingga dapat ditentukan, user berperan sebagai apa, apakah administrator, user biasa atau role lainnya. Dengan module assign role ke user, maka pengaturan ini dapat dilakukan dengan mudah.
+
+Sebagaimana disebutkan sebelumnya, pada aplikasi ini, user dapat diberikan role lebih dari satu, misal user dapat diberi hak akses sebagai user biasa dan sebagai web developer.
+
+Berikut ini contoh tampilan halaman Assign Role Ke User:
+
+Assign Role Ke User
+Module Assign Role Ke User
+10. Assign Module Ke Role
+Selanjutnya kita perlu mengatur halaman (module) yang boleh diakses oleh user, yaitu dengan meng assign module ke role, sehingga user dengan role tertentu hanya dapat mengakses halaman tertentu.
+
+Sebagai contoh, user dengan role user biasa tidak diperkenankan mengakses halaman menu. Dengan pengaturan seperti itu, maka jika user tersebut hendak mengakses halaman menu, maka otomatis akan tertolak.
+
+Untuk mengakomodir keperluan tersebut, kami telah menyediakan halaman untuk mengelola assign module ke role sehingga Anda dapat dengan mudah dapat meng assign module yang diinginkan ke role tertentu
+
+Contoh tampilannya adalah sebagai berikut:
+
+Assign Module ke Role
+Assign Module ke Role
+11. Assign Menu Ke Role
+Agar sinkron antara module yang di assign ke role tertentu dengan menu yang tampil pada aplikasi, maka kita perlu meng assign menu ke role, sehingga menu yang ditampilkan sesuai dengan menu yang di assign ke role tersebut.
+
+Misal, jika user dengan role user biasa tidak diperbolehkan untuk mengakses menu “Menu” maka ketika user tersebut login, menu tersebut tidak perlu kita tampilkan pada daftar menu aplikasi.
+
+Untuk keperluan tersebut, Aplikasi sudah menyediakan halaman Assign Menu ke Role, sehingga Anda akan dengan mudah mengatur menu apa saja yang akan ditampilkan ketika user dengan role tertentu login ke dalam sistem.
+
+Berikut contoh tampilan halaman Assign Menu ke Role
+
+Assign Menu ke Role
+Assign Menu ke Role
+12. Setting Website
+Tentu Anda ingin meyakinkan user bahwa aplikasi canggih yang Anda kembangkan adalah buatan Anda sendiri, hal ini biasanya terlihat dari judul aplikasi, deskripsi aplikasi, logo, icon, dll
+
+Dengan Aplikasi Admin Template Codeigniter 4 ini, Anda dapat dengan mudah mengatur semua itu, sehingga akan terlihat oleh user bahwa aplikasi ini adalah hasil karya Anda sendiri.
+
+Untuk mengatur semua itu, Anda tidak perlu lagi mengedit secara manual, Anda cukup mengakses halaman Setting Website dan semua pengaturan tersebut dapat dilakukan dengan mudah.
+
+Berikut contoh halaman setting website
+
+Halaman Setting Website
+Halaman Setting Website – Admin Template Codeigniter 4
+13. Personalisasi Layout
+Kami memperhatikan setiap detil layout dari aplikasi yang kami kembangkan ini, sehingga selain canggih, juga terlihat menarik dan nyaman bagi user.
+
+Tentu kriteria menarik dan nyaman bagi setiap user berbeda beda, untuk mengakomodir keperluan tersebut, kami telah menyediakan halaman Setting Layout, dimana user dapat melakukan personalisasi tampilan aplikasi, seperti melakukan pengaturan tema warna aplikasi, pengaturan jenis dan ukuran huruf, dll.
+
+Anda, sebagai Administrator dapat melakukan pengaturan default untuk semua user, namun demikian, user dapat melakukan pengaturan sendiri sesuai dengan tampilan yang diinginkan.
+
+Berikut contoh halaman Setting Layout:
+
+Setting Layout - Admin Template Dashboard Codeigniter 4
+Setting Layout – Admin Template Dashboard Codeigniter 4
+14. Quality Code dan Database
+Meskipun menggunakan framework, tidak semua programmer memiliki konsep dan pemahaman yang baik tentang coding yang berkualitas.
+
+Admin Template Codeigniter 4 ini kami kembangkan dengan menerapkan coding best practice, dimana kode ditulis dengan baik dan efisien, sehingga mudah untuk Anda dikembangkan
+
+Disamping dari sisi aplikasi, kami juga memperhatikan detil bagaimana database di desain sehingga Anda akan yakin dengan keandalan pada aplikasi yang akan Anda kembangkan.
+
+Berikut struktur File dan Folder aplikasi:
+
+Struktur Folder Admin Template
+Struktur Folder Admin Template
+II. Builtin Script
+Admin Template Codeigniter 4 yang kami kembangkan ini sudah menyertakan beberapa contoh script penting yang sering digunakan. Script ini dapat Anda gunakan sebagai template, contoh, atau ide untuk mengembangkan aplikasi Anda
+
+Script yang kami sertakan diantaranya script CRUD, Ekspor dan Impor data dari dan ke Excel, ekspor PDF, dan kirim email:
+
+1. CRUD Multiple File Upload
+Script ini menyediakan contoh form input dengan file upload dinamis, dimana user dapat memilih file yang ingin diupload dengan jumlah yang fleksibel
+
+Disamping itu, setelah file terupload, kita dapat meng edit (menu edit) apakah ingin menghapus file tersebut atau menambahkan file lainnya.
+
+Contoh tampilan CRUD Multiple Fileupload adalah sebagai berikut:
+
+Multiple Fileupload - Admin Template Dashboard Codeigniter
+Multiple Fileupload – Admin Template Dashboard Codeigniter
+2. CRUD Image Upload Dengan Preview Image
+Script lain yang biasanya rumit adalah form input dengan pilihan file image yang disertai dengan preview image yang akan diupload.
+
+Pada contoh script ini, preview image akan langsung muncul beserta dengan detail file image tersebut, yaitu nama file image, tipe image dan ukuran file image.
+
+Image Upload Dengan Preview
+Image Upload Dengan Preview
+3. CURD Dengan options dinamis
+Pada script ini, form input terdapat options dinamis, dimana user dapat memilih satu atau lebih options yang telah disediakan.
+
+Pada contoh kali ini, user dapat memilih daftar nama penghadap dan nama penanggung jawab. Berikut contoh tampilannya:
+
+Options Dinamis - Admin Template Codeigniter
+Options Dinamis – Admin Template Codeigniter
+4. CRUD Dengan Input Dinamis
+CRUD selanjutnya yang cukup rumit adalah membuat form dengan input dinamis, dimana jumlah form input dapat ditambah dan dikurangi oleh user sesuai kebutuhan oleh user.
+
+Menjadi rumit karena selain proses input data pada database yang dinamis, pada halaman edit kita juga perlu menyesuaikan form yang ada sesuai dengan banyaknya data yang diinput oleh user
+
+Aplikasi ini telah menyediakan contoh input dinamis, sehingga dapat memberikan Anda ide bagaimana membuat form input dinamis
+
+Input Dinamis
+Input Dinamis
+5. Chain Select (Chain Dropdown) Dengan PHP MySQL dan jQuery
+Ketika menginput data alamat, biasanya terdapat beberapa pilihan wilayah, mulai dari propinsi, kabupaten/kota, kecamatan, dan kelurahan. Membuat form isian data alamat ini rumit karena kita harus membuat chain select / chain dropdown (form select yang saling berkaitan) antara data propinsi, kabupaten, kecamatan, dan kelurahan dengan pengaturan yang tepat
+
+Chain Select Dengan PHP MySQL dan jQuery
+Chain Select Dengan PHP MySQL dan jQuery
+Agar form chain select dapat berjalan dengan baik, kita juga harus memiliki database wilayah dengan struktur yang baik, di internet banyak tersedia data wilayah, namun mencari data yang bagus bukan pekerjaan mudah, pada admin template ini kami telah memilihkan data wilayah dengan struktur data yang bagus yang siap untuk digunakan.
+
+Form chained select / chained dropdown yang disertakan pada admin template ini menggunakan sistem ajax (server side), ketika kita memilih opsi propinsi, sistem akan menampilkan opsi kabupaten berdasarkan propinsi tersebut, ketika kabupaten dipilih, sistim akan menampilkan data kecamatan sesuai dengan kabupaten yang dipilih tersebut, dan ketika kecamatan dipilih, maka akan ditampilkan data kelurahan sesuai data kecamatan yang dipilih.
+
+Chained Dropdown PHP MySQL JQuery Javascript
+Chained Dropdown PHP MySQL JQuery Javascript
+Dengan contoh module chain select ini, Anda tidak perlu repot membuat chain select sendiri dari awal.
+
+6. Data Tables
+Hal berikutnya yang cukup rumit adalah penyajian data dalam bentuk tabel. Hal yang sering menjadi kendala adalah pagination dan pencarian data, atau fitur sorting data berdasarkan kolom tertentu (jika ada).
+
+Untuk mengatasi masalah tersebut, tersedia plugin Data Tables. Data Tables telah menyediakan berbagai fitur penyajian data seperti pagination, sorting data berdasarkan kolom, searching data, dll. Pada contoh script yang disertakan, terdapat contoh bagaimana mendisable sorting kolom secara otomatis menggunakan PHP, dalam contoh kali ini mendisable sorting kolom foto dan action yang berisi tombol edit dan delete.
+
+Selain itu tampilan data tables juga sudah dilengkapi dengan nomor urut dan tombol interaksi data, seperti tombol copy data, ekspor data ke excel, csv, pdf, dan tombol print data.
+
+Berikut ini contoh tampilan Data Tables pada Admin Template yang kami kembangkan.
+
+Data Tables - Admin Template Codeigniter 4 - CI4
+Data Tables – Admin Template Codeigniter 4 – CI4
+7. Data Tables Ajax
+Kendala penyajian data berikutnya adalah jika data yang disajikan jumlah nya banyak, misal ribuan, maka jika dilakukan menggunakan client side processing (tabel disajikan semua baru kemudian diatur layoutnya – paginationnya) maka akan sangat berat.
+
+Untuk mengatasi hal tersbut, biasanya digunakan teknologi ajax, dimana data ditampilkan bertahap sesuai dengan jumlah data yang ingin disajikan per halaman. Hal ini dapat dilakukan dengan plugin Data Tables dengan request data Ajax.
+
+Admin Template ini telah menyediakan contoh penyajian data ini, lengkap dengan manipulasi row yang akan ditampilkan seperti menampilkan gambar dan opsi EDIT dan DELETE pada setiap baris yang ditampilkan. Selain itu dicontohkan juga bagaimana mendisable sorting kolom tertentu secara otomatis menggunakan PHP, pada contoh kali ini mendisable kolom Nomor Urut, Foto, dan Kolom Action
+
+Berikut ini contoh tampilan Data Tables Ajax pada contoh script yang disertakan.
+
+Data Tables Ajax Pada Admin Template Dashboard Codeigniter 4
+Data Tables Ajax Pada Admin Template Dashboard Codeigniter 4
+8. Smart Upload Excel
+Sampel script berikutnya adalah Smart Upload Excel dimana kita dapat upload file excel untuk impor data ke tabel database. Script ini akan otomatis membaca baris pertama file excel sebagai kolom tabel database dan baris berikutnya sebagai data yang akan diinsert ke tabel tersebut. Dengan demikian Anda tidak perlu repot mendefinisikan nama tabel di cosing aplikasinya
+
+Script sudah dioptimasi sedemikian rupa sehingga mampu untuk upload data dengan jumlah yang tidak terbatas, dengan demikian Anda tidak perlu khawatir terjadi out of memory. Untuk upload data yang besar Anda cukup mengatur waktu eksekusi script nya. Dalam konfigurasi standar (120 second) Script mampu upload data sebanyak 40.000 data.
+
+Berikut contoh tampilannya
+
+Script Smart Upload Excel Codeigniter 4
+Script Smart Upload Excel Codeigniter 4
+9. Smart Download Excel
+Aplikasi ini sudah disertai script untuk ekspor data dari tabel database ke file excel. Script akan otomatis membaca nama kolom tabel database beserta metadatanya kemudian menuliskan nama kolom tersebut pada baris pertama file excel, selanjutnya di baris berikutnya akan ditulis data tabel database tersebut.
+
+Script sudah dioptimasi sedemikian rupa sehingga mampu untuk menulis data pada file excel dalam jumlah besar tanpa perlu khawatir terjadi out of memory. Pada konfigurasi standar (120 second) script mampu mengekspor data lebih dari 100.000 baris.
+
+Berikut contoh tampilannya
+
+Script Smart Ekspor Excel Codeigniter 4
+Script Smart Ekspor Excel Codeigniter 4
+10. Ekspor PDF dan Kirim Email
+Contoh script ekspor PDF yang disertakan pada aplikasi ini adalah script untuk menggerate kartu identitas. Script akan menggabungkan beberapa gambar dan teks menjadi satu kemudian mengekspornya ke file PDF. File PDF tersebut otomatis akan langsung terdownload.
+
+File PDF yang digenerate tersebut dapat langsung dikirim via email melalui attachment. Script kirim email yang disertakan sudah mengakomodir berbagai metode pengiriman email, baik melalui shared hosting, email hosting, Gmail Standard (SSL dan TLS), Gmail OAuth 2, dan Amazon SES
+
+Berikut contoh tampilannya
+
+Script PDF dan Kirim Email Codeigniter 4
+Script Generate PDF dan Kirim Email Codeigniter 4
+11. Menampilkan Chart / Grafik
+Admin Template Codeigniter 4 ini sudah dilengkapi dengan script untuk menampilkan chart / grafik. Data yang ditampilkan dalam grafil tersebut merupakan data hasil pengolahan database yang diambil menggunakan PHP.
+
+Di internet terdapat banyak library untuk menampilkan chart / grafik, dari sekian banyaknya library yang ada, kami telah memilih tiga terbaik yang dapat Anda gunakan secara gratis baik untuk tujuan komersial maupun non komersial. Library tersebut adalah: ECharts, ApexCharts, dan Chartjs.
+
+Berikut ini contoh tampilan chart / grafik menggunakan library ECharts
+
+Tampilan Javascript Library Echarts
+Tampilan Javascript Library Echarts
+Untuk library ApexChart tampilannya adalah sebagai berikut:
+
+Tampilan Chart / Grafik Dari Library Apexcharts
+Tampilan Chart / Grafik Dari Library Apexcharts
+Sedangkan untuk library Chartjs, tampilan chart / grafiknya adalah sebagai berikut:
+
+Tampilan Chart / Grafik Dari Library Chartjs
+Tampilan Chart / Grafik Dari Library Chartjs
+Data chart diatas diambil dari database secara dinamis menggunakan PHP. Script javascript untuk menampilkan chart / grafik juga telah di buat sedemikian rupa sehingga chart / grafik yang ditampilkan memiliki atribut yang lebih informatif.
+
+Dari ketiga library chart diatas, kami merekomendasikan Echart sebagai pilihan utama, karena fiturnya yang komplet, selain itu library ini juga sudah dikembangkan lama oleh perusahan besar yaitu Apache. Jika Anda menginginkan library yang simpel, Anda dapat mencoba menggunakan Apexchart atau Chartjs. Menurut pengalaman kami, Apexchart memiliki fitur yang lebih baik dibanding Chartjs.
+
+12. Filepicker
+Aplikasi Admin Template ini telah dilengkapi dengan plugin filepicker yang dapat digunakan untuk memilih file untuk berbagai keperluan, diantaranya memilih image untuk membuat gallery, image untuk artikel, sebagai pengganti file browser, dll. Selain itu plugin ini juga telah dilengkapi dengan drag and drop file uploader. Dengan fitur ini, Anda dapat mengupload semua jenis file baik satu maupun banyak sekaligus.
+
+Plugin Filepicker
+Tampilan Plugin Filepicker
+Berikut beberapa fitur pkugin file picker ini:
+
+User Friendly. Plugin sangat mudah digunakan
+Mengakomodir semua jenis file, baik file image, video, dokumen, archive, dll.
+Menggunakan database untuk menyimpan metadata file, seperti judul, deskripsi, caption, ukuran file, dll
+Auto thumbnail generation untuk file image.
+Dilengkapi dengan drag and drop file manager untuk upload satu atau banyak file sekaligus
+Dilengkapi dengan module file manager. Mudule untuk mengelola file yang telah diupload.
+Integrated dengan plugin Tinymce, plugin text editor paling populer.
+Berikut contoh tampilan module file manager:
+
+File Manager
+Tampilan Module File Manager
+Berikut contoh penggunaan filepicker utuk feature image artikel:
+
+Filepicker Untuk Feature Image
+Filepicker Untuk Feature Image Artikel
+Berikut contoh penggunaan Filepicker sebagai pengganti file browser:
+
+Filepicker Sebagai Pengganti File Browser
+Filepicker Sebagai Pengganti File Browser
+Integrasi Filepicker pada plugin Tinymce:
+
+Integrasi Filepicker Pada Plugin TinyMCE
+Integrasi Filepicker Pada Plugin TinyMCE
+13. Ajax Drag and Drop
+Aplikasi Admin Template ini telah dilengkapi dengan module gallery yang berisi contoh script untuk membuat drag and drop element dengan real time update melalui ajax. Module ini akan memberikan ide bagaimana mengatur urutan element berdasarkan data database dengan menggunakan drag and drop.
+
+Pada halaman kategori gallery, Anda dapat mengubah urutan kategori tersebut dengan menggeser kategori keatas dan kebawah. Selain itu, Anda juga dapat mengaktifkan atau menonaktifkan kategori dengan menggeser kategori ke panel aktif maupun panek non aktif. Setelah kategori digeser, maka data pada database akan otomatis terupdate.
+
+Berikut tampilan halaman kategori gallery:
+
+Karegori Gallery Dengan Drag and Drop
+Karegori Gallery Dengan Drag and Drop
+Selanjutnya, pada menu gallery Anda dapat mengarut urutan gambar yang ingin ditampilkan dengan drag and drop, berikut ini contoh tampilannya:
+
+Ediit Gallery Dengan Drag and Drop
+Ediit Gallery Dengan Drag and Drop
+14. TinyMCE
+Ingin mengintegrasikan text editor dengan plugin WYSIWYG? dengan Admin templete ini, Anda dapat melakukannya dengan mudah. Kami telah menyertakan contoh penerapan penggunaan plugin ini pada module Artikel.
+
+Plugin TinyMCE yang kami sertakan ini telah terintegrasi dengan plugin Filepicker yang telah kita bahas sebelumnya, dengan demikian, Anda dapat memilih gambar dengan mudah.
+
+Plugin TinyMCE pada Aplikasi Admin Template
+Plugin TinyMCE pada Aplikasi Admin Template
+15. Stream Download
+Sebelum user mendownload file yang kita sediakan, terkadang kita ingin melakukan berbagai hal sebelum user tersebut mendownload file, seperti mengecek apakah user tersebut telah login dan diperbolehkan mendownload file, mencatat profil user yang mendownload file, dll.
+
+Hal tersebut tidak dapat dilakukan jika kita menyediakan file tersebut apa adanya, maksudnya link download langsung tertuju ke file dimaksud, untuk itu, kami telah menyediakan module filedownload (nama menu Stream Download) dimana link download yang disediakan tidak langsung mengarah ke file dimaksud melainkan ke halaman tertentu, dihalaman tersebut kita dapat melakukan berbagai hal sebelum user dapat mendownload file dimaksud.
+
+Berikut contoh halama stream download
+
+Stream Download
+Halaman Stream Download
+III. User Manual
+File download aplikasi ini juga sudah disertakan user manual sebanyak 52 halaman (dan terus dilengkapi), yang akan membantu Anda mempermudah memahami alur dari Admin Template Codeigniter ini, termasuk tutorial membuat halaman CRUD dan RBAC di admin template ini secara efisien.
+
+IV. Fitur Lain
+Selain berbagai fitur menarik diatas, Admin Template ini juga memiliki fitur menarik lainnya, diantaranya:
+
+Aplikasi ini menggunakan google font secara offline, sehingga Anda tidak perlu khawatir jika aplikasi ini dijalankan secara offline karena bentuk font akan tetap, tidak berubah;
+Builtin Breadcrumb. Di setiap halaman yang ditampilkan akan muncul link breadcrumb sesuai dengan lokasi halaman tersebut;
+Menggunakan berbagai plugin modern, seperti Bootstrap 4, Bootbox, Google Font, Data Tables, Fontawesome 5, Jquery 3, Swttalert 2, dll.
+Breadcrumb
+Breadcrumb
+V. Live Demo Admin Template Dashboard Codeigniter 4 (CI4)
+Agar memiliki gambaran seperti apa fungsionalitas dan tampilan dari aplikasi Admin Template Codeigniter 4 yang kami kembangkan, Anda dapat mencoba demo aplikasinya dengan mengklik tautan berikut ini:
+
